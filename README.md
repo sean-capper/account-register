@@ -31,7 +31,7 @@ Navigate to the folder location using terminal/cmd
 $ cd projects/accountregister 
 ```
 
-Start the Mongo Demon in terminal/cmd
+Start the Mongo Daemon in terminal/cmd
 
 ```
 $ mongod
@@ -48,11 +48,23 @@ Create the collection the applicaiton will use, default is 'users'
 $ db.createCollection('users') 
 ```
 
+Install the npm dependencies in the project folder
+
+```
+$ npm install
+```
+
+Update the database connectionString in [app.js](app.js), if not using defaults
+
+```
+const db = mongojs('_CHANGE_THIS_', ['_AND_THIS_']);
+```
+
 Start the node app
 
 ```
 $ node app
-or
+    or
 $ nodemon
 ```
 
