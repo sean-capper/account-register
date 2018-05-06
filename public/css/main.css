@@ -1,0 +1,67 @@
+body {
+  font-family: 'Lato', 'sans-serif';
+  background: #2962ff; }
+
+h1 {
+  text-align: center;
+  color: #ffffff; }
+
+.container {
+  display: block;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  min-width: 400px;
+  min-height: 400px; }
+  .container form {
+    background: #0039cb;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 0px 10px #768fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 30px auto; }
+  .container .input-field {
+    font-family: 'Lato', 'sans-serif';
+    margin-bottom: 5px;
+    width: 50%;
+    height: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: 0.2s all ease-in-out; }
+    .container .input-field:hover {
+      transform: scale(1.1); }
+    .container .input-field:focus {
+      outline: none;
+      background: #9effff; }
+  .container .submit-btn {
+    font-family: 'Lato', 'sans-serif';
+    border: none;
+    border-radius: 20px;
+    min-width: 100px;
+    padding: 5px 10px;
+    transition: 0.2s all ease-in-out; }
+    .container .submit-btn:hover {
+      background: #9effff;
+      transform: scale(1.1); }
+
+.link-btn {
+  color: #ffffff;
+  text-decoration: none;
+  width: 100%;
+  background: #0039cb;
+  padding: 10px 15px;
+  border-radius: 20px;
+  line-height: 3em;
+  transition: 0.2s all ease-in-out; }
+  .link-btn:hover {
+    font-size: 1.08em; }
+
+.error {
+  color: #64ffda; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+<% include partials/header %>
+    <h1>Sign In</h1>
+
+    <div class="container">
+        <% if(typeof success == 'object' && success.msg !== '') { %>
+            <p class="success"></p><%= success.msg %></p>
+        <% } %>
+        <form method="POST" action="/login" >
+            <input class="input-field" type="text" placeholder="Username" name="username">
+            <br>
+            <input class="input-field" type="password" placeholder="Password" name="password">
+            <br>
+            <input class="submit-btn" type="submit" value="Sign In">
+        </form>
+        <% if(errors) { %>
+            <% errors.forEach( (error) => { %>
+                <% if(error.msg !== '') { %>
+                    <p class='error'> <%= error.msg %></p>
+                <% } %>
+            <% }) %>
+        <% } %>
+
+        <a class="link-btn" href="createaccount">Don't have an account? Sign up!</a>
+    </div>
+<% include partials/footer %>

@@ -1,0 +1,92 @@
+$p: #2962ff;
+$p-light: #768fff;
+$p-dark: #0039cb;
+$s: #64ffda;
+$s-light: #9effff;
+$s-dark: #14cba8;
+$white: #ffffff;
+
+body {
+    font-family: 'Lato', 'sans-serif';
+    background: $p;
+}
+h1 {
+    text-align: center;
+    color: $white;
+}
+
+.container {
+    display: block;
+    align-content: center;
+    justify-content: center;    
+    text-align: center;
+    min-width: 400px;
+    min-height: 400px;
+    form {
+        background: $p-dark;
+        border-radius: 20px;
+        box-shadow: inset 0px 0px 0px 10px $p-light;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 400px;
+        margin: 30px auto;
+    }
+    .input-field {
+        font-family: 'Lato', 'sans-serif';
+        margin-bottom: 5px;
+        width: 50%;
+        height: 20px;
+        border: none;
+        border-radius: 20px;
+        padding: 5px 10px;
+
+        transition: 0.2s all ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }  
+
+        &:focus {
+            outline: none;
+            background: $s-light;
+        }
+    }
+
+    .submit-btn {
+        font-family: 'Lato', 'sans-serif';
+        border: none;
+        border-radius: 20px;
+        min-width: 100px;
+        padding: 5px 10px;
+
+        transition: 0.2s all ease-in-out;
+
+        &:hover {
+            background: $s-light;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.link-btn {
+    color: $white;
+    text-decoration: none;
+    width: 100%;
+    background: $p-dark;
+    padding: 10px 15px;
+    border-radius: 20px;
+    line-height: 3em;
+    
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        font-size: 1.08em;
+        // background: $p-light;
+        // color: $p-dark;
+    }
+}
+
+.error {
+    color: $s;
+}
